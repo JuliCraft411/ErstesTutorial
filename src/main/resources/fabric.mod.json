@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "erstestutorial",
+	"version": "${version}",
+	"name": "ErstesTutorial",
+	"description": "Das hier ist die erste fabric mod von JuliCraft411",
+
+	"authors": [
+		"JuliCraft411"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@JuliCraft411",
+		"sources": "https://www.youtube.com/@JuliCraft411"
+	},
+	"license": "MIT",
+	"icon": "assets/erstestutorial/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.julicraft.ErstesTutorial"
+		],
+		"fabric-datagen": [
+			"me.julicraft.ErstesTutorialDataGenerator"
+		],
+		"client": [
+			"me.julicraft.ErstesTutorialClient"
+		]
+	},
+	"mixins": [
+		"erstestutorial.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
